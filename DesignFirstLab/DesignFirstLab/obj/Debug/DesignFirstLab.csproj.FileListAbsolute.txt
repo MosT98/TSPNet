@@ -1,0 +1,11 @@
+E:\ANUL III\dotNET2\DesignFirstLab\DesignFirstLab\bin\Debug\DesignFirstLab.exe.config
+E:\ANUL III\dotNET2\DesignFirstLab\DesignFirstLab\bin\Debug\DesignFirstLab.exe
+E:\ANUL III\dotNET2\DesignFirstLab\DesignFirstLab\bin\Debug\DesignFirstLab.pdb
+E:\ANUL III\dotNET2\DesignFirstLab\DesignFirstLab\bin\Debug\EntityFramework.dll
+E:\ANUL III\dotNET2\DesignFirstLab\DesignFirstLab\bin\Debug\EntityFramework.SqlServer.dll
+E:\ANUL III\dotNET2\DesignFirstLab\DesignFirstLab\bin\Debug\EntityFramework.xml
+E:\ANUL III\dotNET2\DesignFirstLab\DesignFirstLab\bin\Debug\EntityFramework.SqlServer.xml
+E:\ANUL III\dotNET2\DesignFirstLab\DesignFirstLab\obj\Debug\DesignFirstLab.csprojAssemblyReference.cache
+E:\ANUL III\dotNET2\DesignFirstLab\DesignFirstLab\obj\Debug\DesignFirstLab.csproj.CopyComplete
+E:\ANUL III\dotNET2\DesignFirstLab\DesignFirstLab\obj\Debug\DesignFirstLab.exe
+E:\ANUL III\dotNET2\DesignFirstLab\DesignFirstLab\obj\Debug\DesignFirstLab.pdb

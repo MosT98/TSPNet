@@ -1,0 +1,11 @@
+E:\ANUL III\dotNET2\LaboratorEF\LaboratorEF\bin\Debug\LaboratorEF.exe.config
+E:\ANUL III\dotNET2\LaboratorEF\LaboratorEF\bin\Debug\LaboratorEF.exe
+E:\ANUL III\dotNET2\LaboratorEF\LaboratorEF\bin\Debug\LaboratorEF.pdb
+E:\ANUL III\dotNET2\LaboratorEF\LaboratorEF\bin\Debug\EntityFramework.dll
+E:\ANUL III\dotNET2\LaboratorEF\LaboratorEF\bin\Debug\EntityFramework.SqlServer.dll
+E:\ANUL III\dotNET2\LaboratorEF\LaboratorEF\bin\Debug\EntityFramework.xml
+E:\ANUL III\dotNET2\LaboratorEF\LaboratorEF\bin\Debug\EntityFramework.SqlServer.xml
+E:\ANUL III\dotNET2\LaboratorEF\LaboratorEF\obj\Debug\LaboratorEF.csprojAssemblyReference.cache
+E:\ANUL III\dotNET2\LaboratorEF\LaboratorEF\obj\Debug\LaboratorEF.csproj.CopyComplete
+E:\ANUL III\dotNET2\LaboratorEF\LaboratorEF\obj\Debug\LaboratorEF.exe
+E:\ANUL III\dotNET2\LaboratorEF\LaboratorEF\obj\Debug\LaboratorEF.pdb

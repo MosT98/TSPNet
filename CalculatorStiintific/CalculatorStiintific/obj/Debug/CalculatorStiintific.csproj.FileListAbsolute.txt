@@ -1,0 +1,9 @@
+E:\ANUL III\dotNET2\CalculatorStiintific\CalculatorStiintific\bin\Debug\CalculatorStiintific.exe.config
+E:\ANUL III\dotNET2\CalculatorStiintific\CalculatorStiintific\bin\Debug\CalculatorStiintific.exe
+E:\ANUL III\dotNET2\CalculatorStiintific\CalculatorStiintific\bin\Debug\CalculatorStiintific.pdb
+E:\ANUL III\dotNET2\CalculatorStiintific\CalculatorStiintific\obj\Debug\CalculatorStiintific.csprojAssemblyReference.cache
+E:\ANUL III\dotNET2\CalculatorStiintific\CalculatorStiintific\obj\Debug\CalculatorStiintific.Form1.resources
+E:\ANUL III\dotNET2\CalculatorStiintific\CalculatorStiintific\obj\Debug\CalculatorStiintific.Properties.Resources.resources
+E:\ANUL III\dotNET2\CalculatorStiintific\CalculatorStiintific\obj\Debug\CalculatorStiintific.csproj.GenerateResource.cache
+E:\ANUL III\dotNET2\CalculatorStiintific\CalculatorStiintific\obj\Debug\CalculatorStiintific.exe
+E:\ANUL III\dotNET2\CalculatorStiintific\CalculatorStiintific\obj\Debug\CalculatorStiintific.pdb

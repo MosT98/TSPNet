@@ -1,0 +1,6 @@
+E:\ANUL III\dotNET2\lab1\lab1\bin\Debug\lab1.exe.config
+E:\ANUL III\dotNET2\lab1\lab1\bin\Debug\lab1.exe
+E:\ANUL III\dotNET2\lab1\lab1\bin\Debug\lab1.pdb
+E:\ANUL III\dotNET2\lab1\lab1\obj\Debug\lab1.csprojAssemblyReference.cache
+E:\ANUL III\dotNET2\lab1\lab1\obj\Debug\lab1.exe
+E:\ANUL III\dotNET2\lab1\lab1\obj\Debug\lab1.pdb

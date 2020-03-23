@@ -1,0 +1,10 @@
+E:\ANUL III\dotNET2\ModelCodeFirst\ModelCodeFirst\bin\Debug\netcoreapp3.1\ModelCodeFirst.deps.json
+E:\ANUL III\dotNET2\ModelCodeFirst\ModelCodeFirst\bin\Debug\netcoreapp3.1\ModelCodeFirst.dll
+E:\ANUL III\dotNET2\ModelCodeFirst\ModelCodeFirst\obj\Debug\netcoreapp3.1\ModelCodeFirst.csprojAssemblyReference.cache
+E:\ANUL III\dotNET2\ModelCodeFirst\ModelCodeFirst\obj\Debug\netcoreapp3.1\ModelCodeFirst.AssemblyInfoInputs.cache
+E:\ANUL III\dotNET2\ModelCodeFirst\ModelCodeFirst\obj\Debug\netcoreapp3.1\ModelCodeFirst.AssemblyInfo.cs
+E:\ANUL III\dotNET2\ModelCodeFirst\ModelCodeFirst\bin\Debug\netcoreapp3.1\ModelCodeFirst.runtimeconfig.json
+E:\ANUL III\dotNET2\ModelCodeFirst\ModelCodeFirst\bin\Debug\netcoreapp3.1\ModelCodeFirst.runtimeconfig.dev.json
+E:\ANUL III\dotNET2\ModelCodeFirst\ModelCodeFirst\bin\Debug\netcoreapp3.1\ModelCodeFirst.pdb
+E:\ANUL III\dotNET2\ModelCodeFirst\ModelCodeFirst\obj\Debug\netcoreapp3.1\ModelCodeFirst.dll
+E:\ANUL III\dotNET2\ModelCodeFirst\ModelCodeFirst\obj\Debug\netcoreapp3.1\ModelCodeFirst.pdb
