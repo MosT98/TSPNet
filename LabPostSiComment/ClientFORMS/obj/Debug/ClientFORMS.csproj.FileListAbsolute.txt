@@ -1,0 +1,9 @@
+E:\ANUL III\dotNET2\LabPostSiComment\ClientFORMS\obj\Debug\ClientFORMS.csprojAssemblyReference.cache
+E:\ANUL III\dotNET2\LabPostSiComment\ClientFORMS\obj\Debug\ClientFORMS.Properties.Resources.resources
+E:\ANUL III\dotNET2\LabPostSiComment\ClientFORMS\obj\Debug\ClientFORMS.csproj.GenerateResource.cache
+E:\ANUL III\dotNET2\LabPostSiComment\ClientFORMS\bin\Debug\ClientFORMS.exe.config
+E:\ANUL III\dotNET2\LabPostSiComment\ClientFORMS\bin\Debug\ClientFORMS.exe
+E:\ANUL III\dotNET2\LabPostSiComment\ClientFORMS\bin\Debug\ClientFORMS.pdb
+E:\ANUL III\dotNET2\LabPostSiComment\ClientFORMS\obj\Debug\ClientFORMS.Form1.resources
+E:\ANUL III\dotNET2\LabPostSiComment\ClientFORMS\obj\Debug\ClientFORMS.exe
+E:\ANUL III\dotNET2\LabPostSiComment\ClientFORMS\obj\Debug\ClientFORMS.pdb

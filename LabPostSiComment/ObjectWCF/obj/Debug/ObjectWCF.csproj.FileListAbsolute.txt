@@ -1,0 +1,11 @@
+E:\ANUL III\dotNET2\LabPostSiComment\ObjectWCF\bin\Debug\ObjectWCF.dll
+E:\ANUL III\dotNET2\LabPostSiComment\ObjectWCF\bin\Debug\ObjectWCF.pdb
+E:\ANUL III\dotNET2\LabPostSiComment\ObjectWCF\bin\Debug\LabPostSiComment.dll
+E:\ANUL III\dotNET2\LabPostSiComment\ObjectWCF\bin\Debug\EntityFramework.dll
+E:\ANUL III\dotNET2\LabPostSiComment\ObjectWCF\bin\Debug\LabPostSiComment.pdb
+E:\ANUL III\dotNET2\LabPostSiComment\ObjectWCF\bin\Debug\LabPostSiComment.dll.config
+E:\ANUL III\dotNET2\LabPostSiComment\ObjectWCF\bin\Debug\EntityFramework.xml
+E:\ANUL III\dotNET2\LabPostSiComment\ObjectWCF\obj\Debug\ObjectWCF.csprojAssemblyReference.cache
+E:\ANUL III\dotNET2\LabPostSiComment\ObjectWCF\obj\Debug\ObjectWCF.csproj.CopyComplete
+E:\ANUL III\dotNET2\LabPostSiComment\ObjectWCF\obj\Debug\ObjectWCF.dll
+E:\ANUL III\dotNET2\LabPostSiComment\ObjectWCF\obj\Debug\ObjectWCF.pdb

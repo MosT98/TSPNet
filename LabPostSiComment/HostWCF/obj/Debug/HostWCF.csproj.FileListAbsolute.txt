@@ -1,0 +1,14 @@
+E:\ANUL III\dotNET2\LabPostSiComment\HostWCF\bin\Debug\HostWCF.exe.config
+E:\ANUL III\dotNET2\LabPostSiComment\HostWCF\bin\Debug\HostWCF.exe
+E:\ANUL III\dotNET2\LabPostSiComment\HostWCF\bin\Debug\HostWCF.pdb
+E:\ANUL III\dotNET2\LabPostSiComment\HostWCF\bin\Debug\ObjectWCF.dll
+E:\ANUL III\dotNET2\LabPostSiComment\HostWCF\bin\Debug\LabPostSiComment.dll
+E:\ANUL III\dotNET2\LabPostSiComment\HostWCF\bin\Debug\EntityFramework.dll
+E:\ANUL III\dotNET2\LabPostSiComment\HostWCF\bin\Debug\ObjectWCF.pdb
+E:\ANUL III\dotNET2\LabPostSiComment\HostWCF\bin\Debug\LabPostSiComment.pdb
+E:\ANUL III\dotNET2\LabPostSiComment\HostWCF\bin\Debug\LabPostSiComment.dll.config
+E:\ANUL III\dotNET2\LabPostSiComment\HostWCF\bin\Debug\EntityFramework.xml
+E:\ANUL III\dotNET2\LabPostSiComment\HostWCF\obj\Debug\HostWCF.csprojAssemblyReference.cache
+E:\ANUL III\dotNET2\LabPostSiComment\HostWCF\obj\Debug\HostWCF.csproj.CopyComplete
+E:\ANUL III\dotNET2\LabPostSiComment\HostWCF\obj\Debug\HostWCF.exe
+E:\ANUL III\dotNET2\LabPostSiComment\HostWCF\obj\Debug\HostWCF.pdb
