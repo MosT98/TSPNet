@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Model1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="Model1Container" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Users" EntityType="Model1.User" />
+    <EntitySet Name="Photos" EntityType="Model1.Photo" />
+    <EntitySet Name="Folders" EntityType="Model1.Folder" />
+    <AssociationSet Name="FolderPhoto" Association="Model1.FolderPhoto">
+      <End Role="Folder" EntitySet="Folders" />
+      <End Role="Photo" EntitySet="Photos" />
+    </AssociationSet>
+    <AssociationSet Name="UserPhoto" Association="Model1.UserPhoto">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Photo" EntitySet="Photos" />
+    </AssociationSet>
+    <AssociationSet Name="UserFolder" Association="Model1.UserFolder">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Folder" EntitySet="Folders" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Guid" Nullable="false" annotation:StoreGeneratedPattern="None" />
+    <Property Name="FirstName" Type="String" Nullable="false" />
+    <Property Name="LastName" Type="String" Nullable="false" />
+    <Property Name="Email" Type="String" Nullable="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="10" />
+    <NavigationProperty Name="Photos" Relationship="Model1.UserPhoto" FromRole="User" ToRole="Photo" />
+    <NavigationProperty Name="Folders" Relationship="Model1.UserFolder" FromRole="User" ToRole="Folder" />
+  </EntityType>
+  <EntityType Name="Photo">
+    <Key>
+      <PropertyRef Name="PhotoId" />
+    </Key>
+    <Property Name="PhotoId" Type="Guid" Nullable="false" annotation:StoreGeneratedPattern="None" />
+    <Property Name="Name" Type="String" Nullable="false" />
+    <Property Name="Location" Type="String" Nullable="false" />
+    <Property Name="Description" Type="String" Nullable="false" />
+    <Property Name="Path" Type="String" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Folders" Relationship="Model1.FolderPhoto" FromRole="Photo" ToRole="Folder" />
+    <NavigationProperty Name="User" Relationship="Model1.UserPhoto" FromRole="Photo" ToRole="User" />
+    <Property Name="UserUserId" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Folder">
+    <Key>
+      <PropertyRef Name="FolderId" />
+    </Key>
+    <Property Name="FolderId" Type="Guid" Nullable="false" annotation:StoreGeneratedPattern="None" />
+    <Property Name="Name" Type="String" Nullable="false" />
+    <Property Name="Path" Type="String" Nullable="false" />
+    <NavigationProperty Name="Photos" Relationship="Model1.FolderPhoto" FromRole="Folder" ToRole="Photo" />
+    <NavigationProperty Name="User" Relationship="Model1.UserFolder" FromRole="Folder" ToRole="User" />
+    <Property Name="UserUserId" Type="Guid" Nullable="false" />
+  </EntityType>
+  <Association Name="FolderPhoto">
+    <End Type="Model1.Folder" Role="Folder" Multiplicity="*" />
+    <End Type="Model1.Photo" Role="Photo" Multiplicity="*" />
+  </Association>
+  <Association Name="UserPhoto">
+    <End Type="Model1.User" Role="User" Multiplicity="1" />
+    <End Type="Model1.Photo" Role="Photo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Photo">
+        <PropertyRef Name="UserUserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UserFolder">
+    <End Type="Model1.User" Role="User" Multiplicity="1" />
+    <End Type="Model1.Folder" Role="Folder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Folder">
+        <PropertyRef Name="UserUserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
