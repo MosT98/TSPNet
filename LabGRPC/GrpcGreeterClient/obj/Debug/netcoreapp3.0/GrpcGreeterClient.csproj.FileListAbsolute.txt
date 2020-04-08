@@ -1,0 +1,17 @@
+E:\ANUL III\LabGRPC\GrpcGreeterClient\bin\Debug\netcoreapp3.0\GrpcGreeterClient.exe
+E:\ANUL III\LabGRPC\GrpcGreeterClient\bin\Debug\netcoreapp3.0\GrpcGreeterClient.deps.json
+E:\ANUL III\LabGRPC\GrpcGreeterClient\bin\Debug\netcoreapp3.0\GrpcGreeterClient.runtimeconfig.json
+E:\ANUL III\LabGRPC\GrpcGreeterClient\bin\Debug\netcoreapp3.0\GrpcGreeterClient.runtimeconfig.dev.json
+E:\ANUL III\LabGRPC\GrpcGreeterClient\bin\Debug\netcoreapp3.0\GrpcGreeterClient.dll
+E:\ANUL III\LabGRPC\GrpcGreeterClient\bin\Debug\netcoreapp3.0\GrpcGreeterClient.pdb
+E:\ANUL III\LabGRPC\GrpcGreeterClient\bin\Debug\netcoreapp3.0\Google.Protobuf.dll
+E:\ANUL III\LabGRPC\GrpcGreeterClient\bin\Debug\netcoreapp3.0\Grpc.Core.Api.dll
+E:\ANUL III\LabGRPC\GrpcGreeterClient\bin\Debug\netcoreapp3.0\Grpc.Net.Client.dll
+E:\ANUL III\LabGRPC\GrpcGreeterClient\bin\Debug\netcoreapp3.0\Grpc.Net.Common.dll
+E:\ANUL III\LabGRPC\GrpcGreeterClient\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\ANUL III\LabGRPC\GrpcGreeterClient\obj\Debug\netcoreapp3.0\GrpcGreeterClient.csprojAssemblyReference.cache
+E:\ANUL III\LabGRPC\GrpcGreeterClient\obj\Debug\netcoreapp3.0\GrpcGreeterClient.AssemblyInfoInputs.cache
+E:\ANUL III\LabGRPC\GrpcGreeterClient\obj\Debug\netcoreapp3.0\GrpcGreeterClient.AssemblyInfo.cs
+E:\ANUL III\LabGRPC\GrpcGreeterClient\obj\Debug\netcoreapp3.0\GrpcGreeterClient.csproj.CopyComplete
+E:\ANUL III\LabGRPC\GrpcGreeterClient\obj\Debug\netcoreapp3.0\GrpcGreeterClient.dll
+E:\ANUL III\LabGRPC\GrpcGreeterClient\obj\Debug\netcoreapp3.0\GrpcGreeterClient.pdb
