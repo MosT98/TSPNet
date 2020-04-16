@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MyPhotos;
+using System;
 using System.Windows.Forms;
 
 namespace MyPhotosGUI
@@ -19,17 +13,15 @@ namespace MyPhotosGUI
 
         private void updateButton_Click(object sender, EventArgs e)
         {
-            MyPhotos.Model1Container context = new MyPhotos.Model1Container();
-            var photo = context.Photos.FirstOrDefault(p => p.Name == comboBox1.Text);
+            var photo = new Photo().GetPhotoByName(comboBox1.Text);
             photo.UpdatePhoto(textName.Text, textLocation.Text, textDescription.Text, textPath.Text, datePicker.Value);
-            context.SaveChanges();
+       
         }
 
         private void UpdatePhotos_Load(object sender, EventArgs e)
         {
-            MyPhotos.Model1Container context = new MyPhotos.Model1Container();
-            var photos = context.Photos;
             comboBox1.SelectedText = "Please select a photo to update";
+            var photos = new Photo().GetPhotos();
             foreach (var photo in photos)
             {
                 comboBox1.Items.Add(photo.Name);
@@ -39,8 +31,7 @@ namespace MyPhotosGUI
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             string valueSelected = comboBox1.Text;
-            MyPhotos.Model1Container context = new MyPhotos.Model1Container();
-            var photo = context.Photos.FirstOrDefault(p => p.Name == valueSelected);
+            var photo = new Photo().GetPhotoByName(valueSelected);
             textName.Text = photo.Name;
             textLocation.Text = photo.Location;
             textDescription.Text = photo.Description;
@@ -51,7 +42,7 @@ namespace MyPhotosGUI
         private void backButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new HomePage().Show();
+            new HomePage().ShowDialog();
             this.Close();
         }
     }

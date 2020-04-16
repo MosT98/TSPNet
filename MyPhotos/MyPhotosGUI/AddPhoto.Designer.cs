@@ -42,8 +42,13 @@
             this.textPath = new System.Windows.Forms.TextBox();
             this.textLocation = new System.Windows.Forms.TextBox();
             this.textName = new System.Windows.Forms.TextBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.browseButton = new System.Windows.Forms.Button();
+            this.text = new System.Windows.Forms.Label();
+            this.photoPreviewBox = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.photoPreviewBox)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -82,6 +87,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.MistyRose;
+            this.panel2.Controls.Add(this.photoPreviewBox);
+            this.panel2.Controls.Add(this.text);
+            this.panel2.Controls.Add(this.browseButton);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
@@ -102,7 +110,7 @@
             // 
             this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.label5.Location = new System.Drawing.Point(199, 226);
+            this.label5.Location = new System.Drawing.Point(12, 277);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(200, 20);
             this.label5.TabIndex = 9;
@@ -113,7 +121,7 @@
             // 
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.label4.Location = new System.Drawing.Point(199, 187);
+            this.label4.Location = new System.Drawing.Point(12, 227);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(200, 20);
             this.label4.TabIndex = 8;
@@ -124,7 +132,7 @@
             // 
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.label3.Location = new System.Drawing.Point(199, 149);
+            this.label3.Location = new System.Drawing.Point(12, 189);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(200, 20);
             this.label3.TabIndex = 7;
@@ -135,7 +143,7 @@
             // 
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.label2.Location = new System.Drawing.Point(199, 104);
+            this.label2.Location = new System.Drawing.Point(12, 144);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(200, 20);
             this.label2.TabIndex = 6;
@@ -146,7 +154,7 @@
             // 
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.label1.Location = new System.Drawing.Point(199, 59);
+            this.label1.Location = new System.Drawing.Point(12, 99);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(200, 20);
             this.label1.TabIndex = 5;
@@ -155,7 +163,7 @@
             // 
             // datePicker
             // 
-            this.datePicker.Location = new System.Drawing.Point(437, 225);
+            this.datePicker.Location = new System.Drawing.Point(250, 276);
             this.datePicker.Name = "datePicker";
             this.datePicker.Size = new System.Drawing.Size(200, 20);
             this.datePicker.TabIndex = 4;
@@ -164,7 +172,7 @@
             // 
             this.textDescription.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.textDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textDescription.Location = new System.Drawing.Point(437, 149);
+            this.textDescription.Location = new System.Drawing.Point(250, 189);
             this.textDescription.Multiline = true;
             this.textDescription.Name = "textDescription";
             this.textDescription.Size = new System.Drawing.Size(200, 20);
@@ -174,17 +182,18 @@
             // 
             this.textPath.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.textPath.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textPath.Location = new System.Drawing.Point(437, 187);
+            this.textPath.Enabled = false;
+            this.textPath.Location = new System.Drawing.Point(250, 227);
             this.textPath.Multiline = true;
             this.textPath.Name = "textPath";
-            this.textPath.Size = new System.Drawing.Size(200, 20);
+            this.textPath.Size = new System.Drawing.Size(200, 43);
             this.textPath.TabIndex = 2;
             // 
             // textLocation
             // 
             this.textLocation.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.textLocation.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textLocation.Location = new System.Drawing.Point(437, 104);
+            this.textLocation.Location = new System.Drawing.Point(250, 144);
             this.textLocation.Multiline = true;
             this.textLocation.Name = "textLocation";
             this.textLocation.Size = new System.Drawing.Size(200, 20);
@@ -194,11 +203,44 @@
             // 
             this.textName.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.textName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textName.Location = new System.Drawing.Point(437, 59);
+            this.textName.Enabled = false;
+            this.textName.Location = new System.Drawing.Point(250, 99);
             this.textName.Multiline = true;
             this.textName.Name = "textName";
             this.textName.Size = new System.Drawing.Size(200, 20);
             this.textName.TabIndex = 0;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // browseButton
+            // 
+            this.browseButton.Location = new System.Drawing.Point(250, 29);
+            this.browseButton.Name = "browseButton";
+            this.browseButton.Size = new System.Drawing.Size(200, 23);
+            this.browseButton.TabIndex = 10;
+            this.browseButton.Text = "Browse for photo";
+            this.browseButton.UseVisualStyleBackColor = true;
+            this.browseButton.Click += new System.EventHandler(this.browseButton_Click);
+            // 
+            // text
+            // 
+            this.text.Font = new System.Drawing.Font("Lucida Handwriting", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text.Location = new System.Drawing.Point(509, 29);
+            this.text.Name = "text";
+            this.text.Size = new System.Drawing.Size(288, 35);
+            this.text.TabIndex = 11;
+            this.text.Text = "Preview";
+            this.text.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // photoPreviewBox
+            // 
+            this.photoPreviewBox.Location = new System.Drawing.Point(515, 67);
+            this.photoPreviewBox.Name = "photoPreviewBox";
+            this.photoPreviewBox.Size = new System.Drawing.Size(282, 218);
+            this.photoPreviewBox.TabIndex = 12;
+            this.photoPreviewBox.TabStop = false;
             // 
             // AddPhoto
             // 
@@ -212,6 +254,7 @@
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.photoPreviewBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -232,5 +275,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Button browseButton;
+        private System.Windows.Forms.Label text;
+        private System.Windows.Forms.PictureBox photoPreviewBox;
     }
 }

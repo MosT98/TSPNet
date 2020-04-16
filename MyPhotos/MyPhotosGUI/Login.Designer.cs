@@ -36,7 +36,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.password = new System.Windows.Forms.TextBox();
             this.email = new System.Windows.Forms.TextBox();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.toRegister = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,17 +109,17 @@
             this.email.Size = new System.Drawing.Size(150, 20);
             this.email.TabIndex = 15;
             // 
-            // linkLabel1
+            // toRegister
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Lucida Handwriting", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(628, 241);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(143, 15);
-            this.linkLabel1.TabIndex = 26;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Create a new account";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.toRegister.AutoSize = true;
+            this.toRegister.Font = new System.Drawing.Font("Lucida Handwriting", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toRegister.Location = new System.Drawing.Point(628, 241);
+            this.toRegister.Name = "toRegister";
+            this.toRegister.Size = new System.Drawing.Size(143, 15);
+            this.toRegister.TabIndex = 26;
+            this.toRegister.TabStop = true;
+            this.toRegister.Text = "Create a new account";
+            this.toRegister.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // Login
             // 
@@ -127,7 +127,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(834, 411);
-            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.toRegister);
             this.Controls.Add(this.loginButton);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -152,6 +152,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox password;
         private System.Windows.Forms.TextBox email;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel toRegister;
     }
 }

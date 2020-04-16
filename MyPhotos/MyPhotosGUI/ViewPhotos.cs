@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
+﻿using MyPhotos;
+using System;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MyPhotosGUI
@@ -26,18 +21,29 @@ namespace MyPhotosGUI
 
         private void refreshButton_Click(object sender, EventArgs e)
         {
-            listView1.Items.Clear();
-            MyPhotos.Model1Container context = new MyPhotos.Model1Container();
-            var allPhotos = context.Photos;
-            foreach (var photo in allPhotos)
+            photosCombo.Items.Clear();
+            var photos = new Photo().GetPhotos();
+            foreach (var photo in photos)
             {
-                ListViewItem item = new ListViewItem(photo.Name);
-                item.SubItems.Add(photo.Description);
-                item.SubItems.Add(photo.Date.ToString());
-                item.SubItems.Add(photo.Path);
-
-                listView1.Items.Add(item);
+                photosCombo.Items.Add(photo.Name);
             }
+        }
+
+        private void ViewPhotos_Load(object sender, EventArgs e)
+        {
+            var photos = new Photo().GetPhotos();
+            foreach (var photo in photos)
+            {
+                photosCombo.Items.Add(photo.Name);
+            }
+        }
+
+        private void deleteButton_Click(object sender, EventArgs e)
+        {
+            string photoToDelete = photosCombo.Text;
+            var photoId = new Photo().GetGuidByName(photoToDelete);
+            new Photo().DeletePhoto(photoId);
+
         }
     }
 }

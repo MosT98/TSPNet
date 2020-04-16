@@ -32,12 +32,11 @@
             this.deleteButton = new System.Windows.Forms.Button();
             this.refreshButton = new System.Windows.Forms.Button();
             this.backButton = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.colName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.colDescription = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.colDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.colPath = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.previewPhoto = new System.Windows.Forms.PictureBox();
+            this.photosCombo = new System.Windows.Forms.ComboBox();
+            this.text = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.previewPhoto)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -61,6 +60,7 @@
             this.deleteButton.TabIndex = 2;
             this.deleteButton.Text = "Delete";
             this.deleteButton.UseVisualStyleBackColor = true;
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
             // refreshButton
             // 
@@ -84,44 +84,32 @@
             this.backButton.UseVisualStyleBackColor = true;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
-            // listView1
+            // previewPhoto
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.colName,
-            this.colDescription,
-            this.colDate,
-            this.colPath});
-            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(0, 0);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(800, 350);
-            this.listView1.TabIndex = 3;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.previewPhoto.Location = new System.Drawing.Point(449, 12);
+            this.previewPhoto.Name = "previewPhoto";
+            this.previewPhoto.Size = new System.Drawing.Size(339, 332);
+            this.previewPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.previewPhoto.TabIndex = 3;
+            this.previewPhoto.TabStop = false;
             // 
-            // colName
+            // photosCombo
             // 
-            this.colName.Text = "Name";
-            this.colName.Width = 182;
+            this.photosCombo.FormattingEnabled = true;
+            this.photosCombo.Location = new System.Drawing.Point(12, 161);
+            this.photosCombo.Name = "photosCombo";
+            this.photosCombo.Size = new System.Drawing.Size(431, 21);
+            this.photosCombo.TabIndex = 4;
             // 
-            // colDescription
+            // text
             // 
-            this.colDescription.Text = "Description";
-            this.colDescription.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.colDescription.Width = 244;
-            // 
-            // colDate
-            // 
-            this.colDate.Text = "Date";
-            this.colDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.colDate.Width = 103;
-            // 
-            // colPath
-            // 
-            this.colPath.Text = "Path";
-            this.colPath.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.colPath.Width = 266;
+            this.text.Font = new System.Drawing.Font("Lucida Handwriting", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text.Location = new System.Drawing.Point(23, 85);
+            this.text.Name = "text";
+            this.text.Size = new System.Drawing.Size(410, 63);
+            this.text.TabIndex = 5;
+            this.text.Text = "Select a photo";
+            this.text.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ViewPhotos
             // 
@@ -129,11 +117,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.text);
+            this.Controls.Add(this.photosCombo);
+            this.Controls.Add(this.previewPhoto);
             this.Controls.Add(this.panel1);
             this.Name = "ViewPhotos";
             this.Text = "View Photos";
+            this.Load += new System.EventHandler(this.ViewPhotos_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.previewPhoto)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -144,10 +136,8 @@
         private System.Windows.Forms.Button deleteButton;
         private System.Windows.Forms.Button refreshButton;
         private System.Windows.Forms.Button backButton;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader colName;
-        private System.Windows.Forms.ColumnHeader colDescription;
-        private System.Windows.Forms.ColumnHeader colDate;
-        private System.Windows.Forms.ColumnHeader colPath;
+        private System.Windows.Forms.PictureBox previewPhoto;
+        private System.Windows.Forms.ComboBox photosCombo;
+        private System.Windows.Forms.Label text;
     }
 }

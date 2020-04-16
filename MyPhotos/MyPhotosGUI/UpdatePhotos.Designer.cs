@@ -152,6 +152,7 @@
             // 
             this.textPath.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.textPath.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textPath.Enabled = false;
             this.textPath.Location = new System.Drawing.Point(437, 246);
             this.textPath.Multiline = true;
             this.textPath.Name = "textPath";
@@ -172,6 +173,7 @@
             // 
             this.textName.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.textName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textName.Enabled = false;
             this.textName.Location = new System.Drawing.Point(437, 118);
             this.textName.Multiline = true;
             this.textName.Name = "textName";

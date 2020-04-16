@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MyPhotos;
+using System;
 using System.Windows.Forms;
 
 namespace MyPhotosGUI
@@ -32,13 +26,10 @@ namespace MyPhotosGUI
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            string inputEmail = email.Text;
-            string inputPassword = password.Text;
-            MyPhotos.Model1Container context = new MyPhotos.Model1Container();
-            var user = context.Users.FirstOrDefault(a => a.Email == inputEmail && a.Password == inputPassword);
-            if (user != null)
+            var checkUser = new User().Login(email.Text, password.Text);
+            if (checkUser != default(Guid))
             {
-                Login.IDUSER = user.UserId;
+                Login.IDUSER = checkUser;
                 this.Hide();
                 new HomePage().ShowDialog();
                 this.Close();

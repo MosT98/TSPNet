@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using MyPhotos;
+using System;
 using System.Drawing;
+using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MyPhotosGUI
@@ -26,11 +23,35 @@ namespace MyPhotosGUI
 
         private void addButton_Click(object sender, EventArgs e)
         {
-            MyPhotos.Photo newPhoto = MyPhotos.Photo.CreatePhoto(textName.Text, textLocation.Text, textDescription.Text, textPath.Text, datePicker.Value, Login.IDUSER);
-            MyPhotos.Model1Container context = new MyPhotos.Model1Container();
-            context.Photos.Add(newPhoto);
-            context.SaveChanges();
+            new Photo().AddPhoto(textName.Text, textLocation.Text, textDescription.Text, textPath.Text, datePicker.Value, Login.IDUSER);
         }
 
+        private void browseButton_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog1 = new OpenFileDialog
+            {
+
+                InitialDirectory = @"C:\Users\andre\Desktop\Poze",
+                RestoreDirectory = true,
+                Title = "Browse Photos",
+                DefaultExt = "jpg",
+
+                CheckFileExists = true,
+                CheckPathExists = true,
+            };
+            
+            if(openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                textPath.Text = openFileDialog1.FileName;
+                string path = openFileDialog1.FileName;
+                string name = path.Split('\\').Last();
+                textName.Text = name;
+                photoPreviewBox.Image = Image.FromFile(path);
+                photoPreviewBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+
+
+        }
     }
 }
+
