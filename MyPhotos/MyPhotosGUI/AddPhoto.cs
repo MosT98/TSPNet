@@ -1,7 +1,5 @@
-﻿using MyPhotos;
-using System;
+﻿using System;
 using System.Drawing;
-using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -23,7 +21,7 @@ namespace MyPhotosGUI
 
         private void addButton_Click(object sender, EventArgs e)
         {
-            new Photo().AddPhoto(textName.Text, textLocation.Text, textDescription.Text, textPath.Text, datePicker.Value, Login.IDUSER);
+            new MyPhotosClient().AddPhoto(textName.Text, textLocation.Text, textDescription.Text, textPath.Text, datePicker.Value, Login.IDUSER);
         }
 
         private void browseButton_Click(object sender, EventArgs e)

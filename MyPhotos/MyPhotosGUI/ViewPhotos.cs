@@ -22,7 +22,7 @@ namespace MyPhotosGUI
         private void refreshButton_Click(object sender, EventArgs e)
         {
             photosCombo.Items.Clear();
-            var photos = new Photo().GetPhotos();
+            var photos = new MyPhotosClient().GetPhotos();
             foreach (var photo in photos)
             {
                 photosCombo.Items.Add(photo.Name);
@@ -31,7 +31,7 @@ namespace MyPhotosGUI
 
         private void ViewPhotos_Load(object sender, EventArgs e)
         {
-            var photos = new Photo().GetPhotos();
+            var photos = new MyPhotosClient().GetPhotos();
             foreach (var photo in photos)
             {
                 photosCombo.Items.Add(photo.Name);
@@ -41,8 +41,8 @@ namespace MyPhotosGUI
         private void deleteButton_Click(object sender, EventArgs e)
         {
             string photoToDelete = photosCombo.Text;
-            var photoId = new Photo().GetGuidByName(photoToDelete);
-            new Photo().DeletePhoto(photoId);
+            var photoId = new MyPhotosClient().GetGuidByName(photoToDelete);
+            new MyPhotosClient().DeletePhoto(photoId);
 
         }
     }

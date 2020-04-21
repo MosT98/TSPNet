@@ -23,5 +23,10 @@ namespace MyPhotosGUI
             new HomePage().ShowDialog();
             this.Close();
         }
+
+        private void addButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

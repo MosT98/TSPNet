@@ -1,5 +1,4 @@
-﻿using MyPhotos;
-using System;
+﻿using System;
 using System.Windows.Forms;
 
 namespace MyPhotosGUI
@@ -26,7 +25,7 @@ namespace MyPhotosGUI
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            var checkUser = new User().Login(email.Text, password.Text);
+            var checkUser = new MyPhotosClient().Login(email.Text, password.Text);
             if (checkUser != default(Guid))
             {
                 Login.IDUSER = checkUser;

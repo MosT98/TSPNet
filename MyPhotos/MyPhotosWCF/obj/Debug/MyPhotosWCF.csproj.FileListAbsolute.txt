@@ -1,0 +1,11 @@
+E:\ANUL III\dotNET2\MyPhotos\MyPhotosWCF\bin\Debug\MyPhotosWCF.dll
+E:\ANUL III\dotNET2\MyPhotos\MyPhotosWCF\bin\Debug\MyPhotosWCF.pdb
+E:\ANUL III\dotNET2\MyPhotos\MyPhotosWCF\bin\Debug\MyPhotos.dll
+E:\ANUL III\dotNET2\MyPhotos\MyPhotosWCF\bin\Debug\EntityFramework.dll
+E:\ANUL III\dotNET2\MyPhotos\MyPhotosWCF\bin\Debug\MyPhotos.pdb
+E:\ANUL III\dotNET2\MyPhotos\MyPhotosWCF\bin\Debug\MyPhotos.dll.config
+E:\ANUL III\dotNET2\MyPhotos\MyPhotosWCF\bin\Debug\EntityFramework.xml
+E:\ANUL III\dotNET2\MyPhotos\MyPhotosWCF\obj\Debug\MyPhotosWCF.csprojAssemblyReference.cache
+E:\ANUL III\dotNET2\MyPhotos\MyPhotosWCF\obj\Debug\MyPhotosWCF.csproj.CopyComplete
+E:\ANUL III\dotNET2\MyPhotos\MyPhotosWCF\obj\Debug\MyPhotosWCF.dll
+E:\ANUL III\dotNET2\MyPhotos\MyPhotosWCF\obj\Debug\MyPhotosWCF.pdb

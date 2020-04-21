@@ -1,0 +1,16 @@
+E:\ANUL III\dotNET2\MyPhotos\HostWCF\bin\Debug\HostWCF.exe.config
+E:\ANUL III\dotNET2\MyPhotos\HostWCF\bin\Debug\HostWCF.exe
+E:\ANUL III\dotNET2\MyPhotos\HostWCF\bin\Debug\HostWCF.pdb
+E:\ANUL III\dotNET2\MyPhotos\HostWCF\bin\Debug\MyPhotosWCF.dll
+E:\ANUL III\dotNET2\MyPhotos\HostWCF\bin\Debug\MyPhotos.dll
+E:\ANUL III\dotNET2\MyPhotos\HostWCF\bin\Debug\EntityFramework.dll
+E:\ANUL III\dotNET2\MyPhotos\HostWCF\bin\Debug\MyPhotosWCF.pdb
+E:\ANUL III\dotNET2\MyPhotos\HostWCF\bin\Debug\MyPhotos.pdb
+E:\ANUL III\dotNET2\MyPhotos\HostWCF\bin\Debug\MyPhotos.dll.config
+E:\ANUL III\dotNET2\MyPhotos\HostWCF\bin\Debug\EntityFramework.xml
+E:\ANUL III\dotNET2\MyPhotos\HostWCF\obj\Debug\HostWCF.csprojAssemblyReference.cache
+E:\ANUL III\dotNET2\MyPhotos\HostWCF\obj\Debug\HostWCF.csproj.CopyComplete
+E:\ANUL III\dotNET2\MyPhotos\HostWCF\obj\Debug\HostWCF.exe
+E:\ANUL III\dotNET2\MyPhotos\HostWCF\obj\Debug\HostWCF.pdb
+E:\ANUL III\dotNET2\MyPhotos\HostWCF\bin\Debug\EntityFramework.SqlServer.dll
+E:\ANUL III\dotNET2\MyPhotos\HostWCF\bin\Debug\EntityFramework.SqlServer.xml
