@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp_Halauca_Andrei_Rp", "Asp_Halauca_Andrei_Rp\Asp_Halauca_Andrei_Rp.csproj", "{907CE004-38C9-4DD3-9E39-514D56A06688}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{907CE004-38C9-4DD3-9E39-514D56A06688}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{907CE004-38C9-4DD3-9E39-514D56A06688}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{907CE004-38C9-4DD3-9E39-514D56A06688}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{907CE004-38C9-4DD3-9E39-514D56A06688}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BDA33E75-BFF3-4B5B-9F35-759ABBDCF023}
+	EndGlobalSection
+EndGlobal
