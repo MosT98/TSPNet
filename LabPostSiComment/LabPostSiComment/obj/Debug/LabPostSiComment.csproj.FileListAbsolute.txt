@@ -9,3 +9,4 @@ E:\ANUL III\dotNET2\LabPostSiComment\LabPostSiComment\obj\Debug\LabPostSiComment
 E:\ANUL III\dotNET2\LabPostSiComment\LabPostSiComment\obj\Debug\LabPostSiComment.csproj.CopyComplete
 E:\ANUL III\dotNET2\LabPostSiComment\LabPostSiComment\obj\Debug\LabPostSiComment.dll
 E:\ANUL III\dotNET2\LabPostSiComment\LabPostSiComment\obj\Debug\LabPostSiComment.pdb
+E:\ANUL III\dotNET2\LabPostSiComment\LabPostSiComment\obj\Debug\LabPostSiComment.csproj.CoreCompileInputs.cache

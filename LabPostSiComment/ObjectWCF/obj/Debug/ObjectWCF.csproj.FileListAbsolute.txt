@@ -9,3 +9,4 @@ E:\ANUL III\dotNET2\LabPostSiComment\ObjectWCF\obj\Debug\ObjectWCF.csprojAssembl
 E:\ANUL III\dotNET2\LabPostSiComment\ObjectWCF\obj\Debug\ObjectWCF.csproj.CopyComplete
 E:\ANUL III\dotNET2\LabPostSiComment\ObjectWCF\obj\Debug\ObjectWCF.dll
 E:\ANUL III\dotNET2\LabPostSiComment\ObjectWCF\obj\Debug\ObjectWCF.pdb
+E:\ANUL III\dotNET2\LabPostSiComment\ObjectWCF\obj\Debug\ObjectWCF.csproj.CoreCompileInputs.cache
