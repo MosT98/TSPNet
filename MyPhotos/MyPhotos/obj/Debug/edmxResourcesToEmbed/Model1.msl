@@ -35,13 +35,5 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <AssociationSetMapping Name="FolderPhoto" TypeName="Model1.FolderPhoto" StoreEntitySet="FolderPhoto">
-      <EndProperty Name="Folder">
-        <ScalarProperty Name="FolderId" ColumnName="Folders_FolderId" />
-      </EndProperty>
-      <EndProperty Name="Photo">
-        <ScalarProperty Name="PhotoId" ColumnName="Photos_PhotoId" />
-      </EndProperty>
-    </AssociationSetMapping>
   </EntityContainerMapping>
 </Mapping>

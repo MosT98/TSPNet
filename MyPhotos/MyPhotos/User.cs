@@ -11,44 +11,22 @@ namespace MyPhotos
 {
     using System;
     using System.Collections.Generic;
-    using System.Runtime.Serialization;
-
-    [DataContract(IsReference = true)]
+    
     public partial class User
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public User()
-        {
-            this.UserId = Guid.NewGuid();
-            this.Photos = new HashSet<Photo>();
-            this.Folders = new HashSet<Folder>();
-        }
-
-        [DataMember]
         public System.Guid UserId { get; set; }
-        [DataMember]
         public string FirstName { get; set; }
-        [DataMember]
         public string LastName { get; set; }
-        [DataMember]
         public string Email { get; set; }
-        [DataMember]
         public string Password { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        [DataMember]
-        public virtual ICollection<Photo> Photos { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        [DataMember]
-        public virtual ICollection<Folder> Folders { get; set; }
 
         public static User CreateUser(string firstName, string lastName, string email, string password)
         {
             return new User
             {
-                UserId  = Guid.NewGuid(),
-                FirstName = firstName, 
-                LastName = lastName, 
+                UserId = Guid.NewGuid(),
+                FirstName = firstName,
+                LastName = lastName,
                 Email = email,
                 Password = password
             };

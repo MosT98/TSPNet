@@ -100,6 +100,7 @@
             this.photosCombo.Name = "photosCombo";
             this.photosCombo.Size = new System.Drawing.Size(431, 21);
             this.photosCombo.TabIndex = 4;
+            this.photosCombo.SelectedIndexChanged += new System.EventHandler(this.photosCombo_SelectedIndexChanged);
             // 
             // text
             // 

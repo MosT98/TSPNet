@@ -1,5 +1,6 @@
 ﻿using MyPhotos;
 using System;
+using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -44,6 +45,14 @@ namespace MyPhotosGUI
             var photoId = new MyPhotosClient().GetGuidByName(photoToDelete);
             new MyPhotosClient().DeletePhoto(photoId);
 
+        }
+
+        private void photosCombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string photoToShow = photosCombo.Text;
+            var photo = new MyPhotosClient().GetPhotoByName(photoToShow);
+            Bitmap imagine = new Bitmap(photo.Path);
+            previewPhoto.Image = imagine;
         }
     }
 }

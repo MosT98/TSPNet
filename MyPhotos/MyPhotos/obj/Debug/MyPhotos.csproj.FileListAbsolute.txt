@@ -9,3 +9,4 @@ E:\ANUL III\dotNET2\MyPhotos\MyPhotos\bin\Debug\EntityFramework.SqlServer.dll
 E:\ANUL III\dotNET2\MyPhotos\MyPhotos\bin\Debug\EntityFramework.xml
 E:\ANUL III\dotNET2\MyPhotos\MyPhotos\bin\Debug\EntityFramework.SqlServer.xml
 E:\ANUL III\dotNET2\MyPhotos\MyPhotos\obj\Debug\MyPhotos.csproj.CopyComplete
+E:\ANUL III\dotNET2\MyPhotos\MyPhotos\obj\Debug\MyPhotos.csproj.CoreCompileInputs.cache

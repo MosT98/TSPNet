@@ -9,23 +9,6 @@
     <EntitySet Name="Users" EntityType="Model1.Store.Users" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="Photos" EntityType="Model1.Store.Photos" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="Folders" EntityType="Model1.Store.Folders" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="FolderPhoto" EntityType="Model1.Store.FolderPhoto" store:Type="Tables" Schema="dbo" />
-    <AssociationSet Name="FK_FolderPhoto_Folder" Association="Model1.Store.FK_FolderPhoto_Folder">
-      <End Role="Folder" EntitySet="Folders" />
-      <End Role="FolderPhoto" EntitySet="FolderPhoto" />
-    </AssociationSet>
-    <AssociationSet Name="FK_FolderPhoto_Photo" Association="Model1.Store.FK_FolderPhoto_Photo">
-      <End Role="Photo" EntitySet="Photos" />
-      <End Role="FolderPhoto" EntitySet="FolderPhoto" />
-    </AssociationSet>
-    <AssociationSet Name="UserPhoto" Association="Model1.Store.UserPhoto">
-      <End Role="User" EntitySet="Users" />
-      <End Role="Photo" EntitySet="Photos" />
-    </AssociationSet>
-    <AssociationSet Name="UserFolder" Association="Model1.Store.UserFolder">
-      <End Role="User" EntitySet="Users" />
-      <End Role="Folder" EntitySet="Folders" />
-    </AssociationSet>
   </EntityContainer>
   <EntityType Name="Users">
     <Key>
@@ -58,62 +41,6 @@
     <Property Name="Path" Type="nvarchar(max)" Nullable="false" />
     <Property Name="UserUserId" Type="uniqueidentifier" Nullable="false" />
   </EntityType>
-  <EntityType Name="FolderPhoto">
-    <Key>
-      <PropertyRef Name="Folders_FolderId" />
-      <PropertyRef Name="Photos_PhotoId" />
-    </Key>
-    <Property Name="Folders_FolderId" Type="uniqueidentifier" Nullable="false" />
-    <Property Name="Photos_PhotoId" Type="uniqueidentifier" Nullable="false" />
-  </EntityType>
-  <Association Name="UserPhoto">
-    <End Role="User" Type="Model1.Store.Users" Multiplicity="1" />
-    <End Role="Photo" Type="Model1.Store.Photos" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="User">
-        <PropertyRef Name="UserId" />
-      </Principal>
-      <Dependent Role="Photo">
-        <PropertyRef Name="UserUserId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="UserFolder">
-    <End Role="User" Type="Model1.Store.Users" Multiplicity="1" />
-    <End Role="Folder" Type="Model1.Store.Folders" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="User">
-        <PropertyRef Name="UserId" />
-      </Principal>
-      <Dependent Role="Folder">
-        <PropertyRef Name="UserUserId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_FolderPhoto_Folder">
-    <End Role="Folder" Type="Model1.Store.Folders" Multiplicity="1" />
-    <End Role="FolderPhoto" Type="Model1.Store.FolderPhoto" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Folder">
-        <PropertyRef Name="FolderId" />
-      </Principal>
-      <Dependent Role="FolderPhoto">
-        <PropertyRef Name="Folders_FolderId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_FolderPhoto_Photo">
-    <End Role="FolderPhoto" Type="Model1.Store.FolderPhoto" Multiplicity="*" />
-    <End Role="Photo" Type="Model1.Store.Photos" Multiplicity="1" />
-    <ReferentialConstraint>
-      <Principal Role="Photo">
-        <PropertyRef Name="PhotoId" />
-      </Principal>
-      <Dependent Role="FolderPhoto">
-        <PropertyRef Name="Photos_PhotoId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
 </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
@@ -122,18 +49,6 @@
           <EntitySet Name="Users" EntityType="Model1.User" />
           <EntitySet Name="Photos" EntityType="Model1.Photo" />
           <EntitySet Name="Folders" EntityType="Model1.Folder" />
-          <AssociationSet Name="FolderPhoto" Association="Model1.FolderPhoto">
-            <End Role="Folder" EntitySet="Folders" />
-            <End Role="Photo" EntitySet="Photos" />
-          </AssociationSet>
-          <AssociationSet Name="UserPhoto" Association="Model1.UserPhoto">
-            <End Role="User" EntitySet="Users" />
-            <End Role="Photo" EntitySet="Photos" />
-          </AssociationSet>
-          <AssociationSet Name="UserFolder" Association="Model1.UserFolder">
-            <End Role="User" EntitySet="Users" />
-            <End Role="Folder" EntitySet="Folders" />
-          </AssociationSet>
         </EntityContainer>
         <EntityType Name="User">
           <Key>
@@ -144,8 +59,6 @@
           <Property Name="LastName" Type="String" Nullable="false" />
           <Property Name="Email" Type="String" Nullable="false" />
           <Property Name="Password" Type="String" Nullable="false" MaxLength="10" />
-          <NavigationProperty Name="Photos" Relationship="Model1.UserPhoto" FromRole="User" ToRole="Photo" />
-          <NavigationProperty Name="Folders" Relationship="Model1.UserFolder" FromRole="User" ToRole="Folder" />
         </EntityType>
         <EntityType Name="Photo">
           <Key>
@@ -157,8 +70,6 @@
           <Property Name="Description" Type="String" Nullable="false" />
           <Property Name="Path" Type="String" Nullable="false" />
           <Property Name="Date" Type="DateTime" Nullable="false" />
-          <NavigationProperty Name="Folders" Relationship="Model1.FolderPhoto" FromRole="Photo" ToRole="Folder" />
-          <NavigationProperty Name="User" Relationship="Model1.UserPhoto" FromRole="Photo" ToRole="User" />
           <Property Name="UserUserId" Type="Guid" Nullable="false" />
         </EntityType>
         <EntityType Name="Folder">
@@ -168,38 +79,8 @@
           <Property Name="FolderId" Type="Guid" Nullable="false" annotation:StoreGeneratedPattern="None" />
           <Property Name="Name" Type="String" Nullable="false" />
           <Property Name="Path" Type="String" Nullable="false" />
-          <NavigationProperty Name="Photos" Relationship="Model1.FolderPhoto" FromRole="Folder" ToRole="Photo" />
-          <NavigationProperty Name="User" Relationship="Model1.UserFolder" FromRole="Folder" ToRole="User" />
           <Property Name="UserUserId" Type="Guid" Nullable="false" />
         </EntityType>
-        <Association Name="FolderPhoto">
-          <End Type="Model1.Folder" Role="Folder" Multiplicity="*" />
-          <End Type="Model1.Photo" Role="Photo" Multiplicity="*" />
-        </Association>
-        <Association Name="UserPhoto">
-          <End Type="Model1.User" Role="User" Multiplicity="1" />
-          <End Type="Model1.Photo" Role="Photo" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="User">
-              <PropertyRef Name="UserId" />
-            </Principal>
-            <Dependent Role="Photo">
-              <PropertyRef Name="UserUserId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="UserFolder">
-          <End Type="Model1.User" Role="User" Multiplicity="1" />
-          <End Type="Model1.Folder" Role="Folder" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="User">
-              <PropertyRef Name="UserId" />
-            </Principal>
-            <Dependent Role="Folder">
-              <PropertyRef Name="UserUserId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -240,14 +121,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <AssociationSetMapping Name="FolderPhoto" TypeName="Model1.FolderPhoto" StoreEntitySet="FolderPhoto">
-      <EndProperty Name="Folder">
-        <ScalarProperty Name="FolderId" ColumnName="Folders_FolderId" />
-      </EndProperty>
-      <EndProperty Name="Photo">
-        <ScalarProperty Name="PhotoId" ColumnName="Photos_PhotoId" />
-      </EndProperty>
-    </AssociationSetMapping>
   </EntityContainerMapping>
 </Mapping></edmx:Mappings>
   </edmx:Runtime>

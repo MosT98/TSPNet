@@ -25,3 +25,4 @@ E:\ANUL III\dotNET2\MyPhotos\MyPhotosGUI\bin\Debug\DocumentFormat.OpenXml.dll
 E:\ANUL III\dotNET2\MyPhotos\MyPhotosGUI\bin\Debug\System.IO.Packaging.dll
 E:\ANUL III\dotNET2\MyPhotos\MyPhotosGUI\bin\Debug\DocumentFormat.OpenXml.xml
 E:\ANUL III\dotNET2\MyPhotos\MyPhotosGUI\bin\Debug\System.IO.Packaging.xml
+E:\ANUL III\dotNET2\MyPhotos\MyPhotosGUI\obj\Debug\MyPhotosGUI.csproj.CoreCompileInputs.cache

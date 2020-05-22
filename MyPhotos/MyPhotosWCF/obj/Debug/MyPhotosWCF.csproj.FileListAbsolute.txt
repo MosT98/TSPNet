@@ -9,3 +9,4 @@ E:\ANUL III\dotNET2\MyPhotos\MyPhotosWCF\obj\Debug\MyPhotosWCF.csprojAssemblyRef
 E:\ANUL III\dotNET2\MyPhotos\MyPhotosWCF\obj\Debug\MyPhotosWCF.csproj.CopyComplete
 E:\ANUL III\dotNET2\MyPhotos\MyPhotosWCF\obj\Debug\MyPhotosWCF.dll
 E:\ANUL III\dotNET2\MyPhotos\MyPhotosWCF\obj\Debug\MyPhotosWCF.pdb
+E:\ANUL III\dotNET2\MyPhotos\MyPhotosWCF\obj\Debug\MyPhotosWCF.csproj.CoreCompileInputs.cache

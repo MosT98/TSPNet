@@ -11,40 +11,18 @@ namespace MyPhotos
 {
     using System;
     using System.Collections.Generic;
-    using System.Runtime.Serialization;
-
-    [DataContract(IsReference = true)]
+    
     public partial class Photo
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Photo()
-        {
-            this.PhotoId = Guid.NewGuid();
-            this.Folders = new HashSet<Folder>();
-        }
-
-        [DataMember]
         public System.Guid PhotoId { get; set; }
-        [DataMember]
         public string Name { get; set; }
-        [DataMember]
         public string Location { get; set; }
-        [DataMember]
         public string Description { get; set; }
-        [DataMember]
         public string Path { get; set; }
-        [DataMember]
         public System.DateTime Date { get; set; }
-        [DataMember]
         public System.Guid UserUserId { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        [DataMember]
-        public virtual ICollection<Folder> Folders { get; set; }
-        [DataMember]
-        public virtual User User { get; set; }
-
-        public static Photo CreatePhoto(string name, string location, string description, string path, DateTime date, Guid userId)
+        public static Photo CreatePhoto(string name, string location, string description, string path, DateTime date, Guid idUser)
         {
             return new Photo
             {
@@ -54,17 +32,11 @@ namespace MyPhotos
                 Description = description,
                 Path = path,
                 Date = date,
-                UserUserId = userId
+                UserUserId = idUser
             };
         }
-
-        public void UpdatePhoto(string name, string location, string description, string path, DateTime date)
-        {
-            this.Name = name;
-            this.Location = location;
-            this.Description = description;
-            this.Path = path;
-            this.Date = date;
-        }
     }
+
+
+
 }

@@ -86,7 +86,7 @@ namespace MyPhotosWCF
 
         public void UpdatePhoto(Guid id, string name, string location, string description, string path, DateTime date, ICollection<Folder> folders)
         {
-            new Photo().UpdatePhoto(id, name, location, description, path, date, folders);
+            new Photo().UpdatePhoto(id, name, location, description, path, date);
         }
 
         public void UpdateUser(Guid id, string firstName, string lastName, string email, string password)

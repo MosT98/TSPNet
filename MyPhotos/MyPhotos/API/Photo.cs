@@ -53,7 +53,7 @@ namespace MyPhotos
             return false;
         }
 
-        public void UpdatePhoto(Guid id, string name, string location, string description, string path, DateTime date, ICollection<Folder> folders)
+        public void UpdatePhoto(Guid id, string name, string location, string description, string path, DateTime date)
         {
             Model1Container context = new Model1Container();
             var photo = context.Photos.FirstOrDefault(p => p.PhotoId == id);
@@ -62,7 +62,6 @@ namespace MyPhotos
             photo.Description = description;
             photo.Path = path;
             photo.Date = date;
-            photo.Folders = folders;
             context.SaveChanges();
         }
 

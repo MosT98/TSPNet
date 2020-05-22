@@ -15,7 +15,6 @@ namespace MyPhotos
             var folder = context.Folders.FirstOrDefault(f => f.FolderId == id);
             folder.Name = name;
             folder.Path = path;
-            folder.Photos = photos;
             context.SaveChanges();
         }
 

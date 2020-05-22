@@ -4,23 +4,6 @@
     <EntitySet Name="Users" EntityType="Model1.Store.Users" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="Photos" EntityType="Model1.Store.Photos" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="Folders" EntityType="Model1.Store.Folders" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="FolderPhoto" EntityType="Model1.Store.FolderPhoto" store:Type="Tables" Schema="dbo" />
-    <AssociationSet Name="FK_FolderPhoto_Folder" Association="Model1.Store.FK_FolderPhoto_Folder">
-      <End Role="Folder" EntitySet="Folders" />
-      <End Role="FolderPhoto" EntitySet="FolderPhoto" />
-    </AssociationSet>
-    <AssociationSet Name="FK_FolderPhoto_Photo" Association="Model1.Store.FK_FolderPhoto_Photo">
-      <End Role="Photo" EntitySet="Photos" />
-      <End Role="FolderPhoto" EntitySet="FolderPhoto" />
-    </AssociationSet>
-    <AssociationSet Name="UserPhoto" Association="Model1.Store.UserPhoto">
-      <End Role="User" EntitySet="Users" />
-      <End Role="Photo" EntitySet="Photos" />
-    </AssociationSet>
-    <AssociationSet Name="UserFolder" Association="Model1.Store.UserFolder">
-      <End Role="User" EntitySet="Users" />
-      <End Role="Folder" EntitySet="Folders" />
-    </AssociationSet>
   </EntityContainer>
   <EntityType Name="Users">
     <Key>
@@ -53,60 +36,4 @@
     <Property Name="Path" Type="nvarchar(max)" Nullable="false" />
     <Property Name="UserUserId" Type="uniqueidentifier" Nullable="false" />
   </EntityType>
-  <EntityType Name="FolderPhoto">
-    <Key>
-      <PropertyRef Name="Folders_FolderId" />
-      <PropertyRef Name="Photos_PhotoId" />
-    </Key>
-    <Property Name="Folders_FolderId" Type="uniqueidentifier" Nullable="false" />
-    <Property Name="Photos_PhotoId" Type="uniqueidentifier" Nullable="false" />
-  </EntityType>
-  <Association Name="UserPhoto">
-    <End Role="User" Type="Model1.Store.Users" Multiplicity="1" />
-    <End Role="Photo" Type="Model1.Store.Photos" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="User">
-        <PropertyRef Name="UserId" />
-      </Principal>
-      <Dependent Role="Photo">
-        <PropertyRef Name="UserUserId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="UserFolder">
-    <End Role="User" Type="Model1.Store.Users" Multiplicity="1" />
-    <End Role="Folder" Type="Model1.Store.Folders" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="User">
-        <PropertyRef Name="UserId" />
-      </Principal>
-      <Dependent Role="Folder">
-        <PropertyRef Name="UserUserId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_FolderPhoto_Folder">
-    <End Role="Folder" Type="Model1.Store.Folders" Multiplicity="1" />
-    <End Role="FolderPhoto" Type="Model1.Store.FolderPhoto" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Folder">
-        <PropertyRef Name="FolderId" />
-      </Principal>
-      <Dependent Role="FolderPhoto">
-        <PropertyRef Name="Folders_FolderId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_FolderPhoto_Photo">
-    <End Role="FolderPhoto" Type="Model1.Store.FolderPhoto" Multiplicity="*" />
-    <End Role="Photo" Type="Model1.Store.Photos" Multiplicity="1" />
-    <ReferentialConstraint>
-      <Principal Role="Photo">
-        <PropertyRef Name="PhotoId" />
-      </Principal>
-      <Dependent Role="FolderPhoto">
-        <PropertyRef Name="Photos_PhotoId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
 </Schema>
