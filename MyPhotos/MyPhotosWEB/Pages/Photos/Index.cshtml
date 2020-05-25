@@ -1,0 +1,82 @@
+﻿@page
+@model MyPhotosWEB.Pages.Photos.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+
+    string afisare(string abc)
+    {
+        return "images/" + abc;
+    }
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <div>
+                    Poza
+                </div>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhotoDTO[0].Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhotoDTO[0].Location)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhotoDTO[0].Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhotoDTO[0].Path)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhotoDTO[0].Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhotoDTO[0].UserUserId)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.PhotoDTO)
+        {
+            <tr>
+                <td>
+                    <img src="@afisare(item.Name)" width="100px" height="100px"/>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Location)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Path)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserUserId)
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.PhotoId">Edit</a> |
+                    <a asp-page="./Details" asp-route-id="@item.PhotoId">Details</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.PhotoId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<img src="images\pisicadoarme.jfif	"/>

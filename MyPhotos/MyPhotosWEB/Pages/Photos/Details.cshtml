@@ -1,0 +1,55 @@
+﻿@page
+@model MyPhotosWEB.Pages.Photos.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>PhotoDTO</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PhotoDTO.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PhotoDTO.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PhotoDTO.Location)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PhotoDTO.Location)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PhotoDTO.Description)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PhotoDTO.Description)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PhotoDTO.Path)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PhotoDTO.Path)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PhotoDTO.Date)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PhotoDTO.Date)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PhotoDTO.UserUserId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PhotoDTO.UserUserId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.PhotoDTO.PhotoId">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
