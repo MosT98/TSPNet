@@ -167,8 +167,6 @@ E:\ANUL III\dotNET2\MyPhotos\MyPhotosWEB\bin\Debug\netcoreapp3.1\ru\Microsoft.Co
 E:\ANUL III\dotNET2\MyPhotos\MyPhotosWEB\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 E:\ANUL III\dotNET2\MyPhotos\MyPhotosWEB\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 E:\ANUL III\dotNET2\MyPhotos\MyPhotosWEB\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\ANUL III\dotNET2\MyPhotos\MyPhotosWEB\obj\Debug\netcoreapp3.1\MyPhotosWEB.csproj.CoreCompileInputs.cache
-E:\ANUL III\dotNET2\MyPhotos\MyPhotosWEB\obj\Debug\netcoreapp3.1\MyPhotosWEB.MvcApplicationPartsAssemblyInfo.cache
 E:\ANUL III\dotNET2\MyPhotos\MyPhotosWEB\obj\Debug\netcoreapp3.1\MyPhotosWEB.Views.pdb
 E:\ANUL III\dotNET2\MyPhotos\MyPhotosWEB\obj\Debug\netcoreapp3.1\MyPhotosWEB.dll
 E:\ANUL III\dotNET2\MyPhotos\MyPhotosWEB\obj\Debug\netcoreapp3.1\MyPhotosWEB.pdb
@@ -185,3 +183,11 @@ E:\ANUL III\dotNET2\MyPhotos\MyPhotosWEB\obj\Debug\netcoreapp3.1\Razor\Pages\Use
 E:\ANUL III\dotNET2\MyPhotos\MyPhotosWEB\obj\Debug\netcoreapp3.1\Razor\Pages\Users\Details.cshtml.g.cs
 E:\ANUL III\dotNET2\MyPhotos\MyPhotosWEB\obj\Debug\netcoreapp3.1\Razor\Pages\Users\Edit.cshtml.g.cs
 E:\ANUL III\dotNET2\MyPhotos\MyPhotosWEB\obj\Debug\netcoreapp3.1\Razor\Pages\Users\Index.cshtml.g.cs
+E:\ANUL III\dotNET2\MyPhotos\MyPhotosWEB\obj\Debug\netcoreapp3.1\MyPhotosWEB.csproj.CoreCompileInputs.cache
+E:\ANUL III\dotNET2\MyPhotos\MyPhotosWEB\obj\Debug\netcoreapp3.1\MyPhotosWEB.MvcApplicationPartsAssemblyInfo.cache
+E:\ANUL III\dotNET2\MyPhotos\MyPhotosWEB\bin\Debug\netcoreapp3.1\AutoMapper.dll
+E:\ANUL III\dotNET2\MyPhotos\MyPhotosWEB\obj\Debug\netcoreapp3.1\Razor\Pages\Folders\Create.cshtml.g.cs
+E:\ANUL III\dotNET2\MyPhotos\MyPhotosWEB\obj\Debug\netcoreapp3.1\Razor\Pages\Folders\Delete.cshtml.g.cs
+E:\ANUL III\dotNET2\MyPhotos\MyPhotosWEB\obj\Debug\netcoreapp3.1\Razor\Pages\Folders\Details.cshtml.g.cs
+E:\ANUL III\dotNET2\MyPhotos\MyPhotosWEB\obj\Debug\netcoreapp3.1\Razor\Pages\Folders\Edit.cshtml.g.cs
+E:\ANUL III\dotNET2\MyPhotos\MyPhotosWEB\obj\Debug\netcoreapp3.1\Razor\Pages\Folders\Index.cshtml.g.cs

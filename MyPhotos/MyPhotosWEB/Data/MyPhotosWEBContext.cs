@@ -17,5 +17,7 @@ namespace MyPhotosWEB.Data
         public DbSet<MyPhotosWEB.Models.PhotoDTO> PhotoDTO { get; set; }
 
         public DbSet<MyPhotosWEB.Models.UserDTO> UserDTO { get; set; }
+
+        public DbSet<MyPhotosWEB.Models.FolderDTO> FolderDTO { get; set; }
     }
 }

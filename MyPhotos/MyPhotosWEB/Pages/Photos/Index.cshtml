@@ -10,11 +10,26 @@
     }
 }
 
-<h1>Index</h1>
+<h1>Photos</h1>
 
 <p>
     <a asp-page="Create">Create New</a>
 </p>
+<p>
+    <b>Filter section</b>
+</p>
+<form method="post">
+    <p>
+        Name: <input type="text" name="SearchName" />
+        Location: <input type="text" name="SearchLocation" />
+        Description: <input type="text" name="SearchDescription" />
+        @*Date:  <input type="date" name="SearchDate" />*@
+        Clear Filter <input type="checkbox" name="DeleteFilter" />
+        <center><input type="submit" value="Filter" /></center>
+        <center><b>Results: </b> @Model.Counter | @Model.Filter</center>
+    </p>
+</form>
+
 <table class="table">
     <thead>
         <tr>
@@ -24,28 +39,28 @@
                 </div>
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.PhotoDTO[0].Name)
+                @Html.DisplayNameFor(model => model.Photos[0].Name)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.PhotoDTO[0].Location)
+                @Html.DisplayNameFor(model => model.Photos[0].Location)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.PhotoDTO[0].Description)
+                @Html.DisplayNameFor(model => model.Photos[0].Description)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.PhotoDTO[0].Path)
+                @Html.DisplayNameFor(model => model.Photos[0].Path)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.PhotoDTO[0].Date)
+                @Html.DisplayNameFor(model => model.Photos[0].Date)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.PhotoDTO[0].UserUserId)
+                @Html.DisplayNameFor(model => model.Photos[0].UserUserId)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model.PhotoDTO)
+        @foreach (var item in Model.Photos)
         {
             <tr>
                 <td>
@@ -78,5 +93,3 @@
         }
     </tbody>
 </table>
-
-<img src="images\pisicadoarme.jfif	"/>

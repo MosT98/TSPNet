@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "4DxAfMt4tE35x04/VFRpgeT3/dXXyeyoFzmKwrtrt+yQ+UjXW8/HswR8478a0KWtoQXHyMHlcSn9yc7OPHZdDA==",
+  "dgSpecHash": "lKYtyho/P7gwcNFQexzIoevW5TXN/0v679WgKq4XU2OhfILDJmg7K+5zo2i57YJ//9ouReykqiGbFJ6kxvSpOw==",
   "success": true,
   "projectFilePath": "E:\\ANUL III\\dotNET2\\MyPhotos\\MyPhotosWEB\\MyPhotosWEB.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\andre\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\3.1.0\\microsoft.aspnetcore.razor.language.3.1.0.nupkg.sha512",
